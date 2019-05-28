@@ -36,6 +36,8 @@ Time:        3.158s
 Ran all test suites.
 ```
 
+For your own project, just copy the `i18n.spec.js` from here and paste it inside your i18n folder. 
+
 # prerequisites
 - Be sure `node.js` is installed, optionally `yarn`
 - `npm install` or `yarn install`
