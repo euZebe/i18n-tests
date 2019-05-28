@@ -11,6 +11,35 @@ This test allows to add a new context with its translations and automatically ch
 # where?
 `i18n.spec.js` should be placed inside the i18n folder
 
+# how?
+`npm test` or `yarn test` which will launch jest
+
+```
+> jest
+
+ PASS  i18n/i18n.spec.js
+  context1 configuration
+    √ fr.json should have the same translations keys as en.json (17ms)
+    √ nl.json should have the same translations keys as en.json (5ms)
+  context2 configuration
+    √ en.json should have the same translations keys as de.json (5ms)
+    √ es.json should have the same translations keys as de.json (11ms)
+    √ fr.json should have the same translations keys as de.json (11ms)
+    √ pt.json should have the same translations keys as de.json (5ms)
+  . configuration
+    √ fr.json should have the same translations keys as en.json (14ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       7 passed, 7 total
+Snapshots:   0 total
+Time:        3.158s
+Ran all test suites.
+```
+
+# prerequisites
+- Be sure `node.js` is installed, optionally `yarn`
+- `npm install` or `yarn install`
+
 ## I don't need that "context" level
 `i18n.spec.js` also checks translation files inside the root directory. If you don't need the context level, you can just remove the "test context folders" section
 
